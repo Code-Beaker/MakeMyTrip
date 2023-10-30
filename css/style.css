@@ -141,7 +141,7 @@
 .section-title {
   font-size: 3rem;
   font-weight: var(--fw-bolder);
-  margin: 1rem auto;
+  margin: 1.5rem auto;
 }
 
 .section-text {
@@ -193,4 +193,71 @@
   font-size: 1.25rem;
   color: var(--grey-600);
   /* border: 1px solid red; */
+}
+
+/* ## footer ## */
+.footer {
+  background: var(--grey-800);
+  padding: 2rem;
+  color: var(--grey-300);
+}
+
+.footer-main-text {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.footer-nav {
+  padding: 3rem;
+}
+
+.footer-links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.footer-link:hover {
+  opacity: 0.85;
+}
+
+/* ## footer link */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.footer-grid-links {
+  list-style: none;
+}
+
+.footer-item-title {
+  text-transform: capitalize;
+  font-size: 1.35rem;
+  margin: 1rem 0;
+}
+
+.footer-grid-link {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--white);
+  /* font-size: 1.125rem; */
+  margin: 0.5rem 0;
+  display: inline-block;
+}
+
+.footer-grid-link:hover {
+  text-decoration: underline;
+  opacity: 0.85;
 }
