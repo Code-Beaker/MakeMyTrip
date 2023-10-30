@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --ff-title: "Manrope";
+  --ff-body: "Roboto";
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-bolder: 800;
+
+  --white: #fff;
+  --grey-300: #bfbfbf;
+  --grey-600: #8c8c8c;
+  --grey-700: #262626;
+  --grey-800: #202020;
+  --black: #000;
+  --violet-500: #7238f5;
+  --violet-600: #4b0bdb;
+  --magenta-400: #ed38f5;
+  --magenta-500: #b139f5;
+  --blue-500: #383cf5;
+  --blue-600: #090caa;
+  --magenta-pure-500: #f53891;
+  --magenta-pure-600: #db0b6d;
+  --yellow-500: #ffb61a;
+  --yellow-600: #ff941a;
+  --mozilla-blue-500: #1a8dff;
+  --mozilla-blue-600: #0073e6;
+
+  --time-faster: 150ms cubic-bezier(0.8, 0, 0.25, 1);
+  --time-fast: 250ms cubic-bezier(0.8, 0, 0.25, 1);
+  --time-slow: 500ms cubic-bezier(0.8, 0, 0.25, 1);
+  --time-slower: 1000ms cubic-bezier(0.8, 0, 0.25, 1);
+  --time-slowest: 2000ms cubic-bezier(0.8, 0, 0.25, 1);
+}
