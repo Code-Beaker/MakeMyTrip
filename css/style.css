@@ -38,7 +38,7 @@
   font-size: 1.125rem;
   display: block;
   color: var(--white);
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-bold);
   padding: 0.75rem 1.5rem;
   border-radius: 3rem;
   transition: var(--time-faster);
@@ -56,10 +56,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
+}
+
+.hero-home {
+  background-image: url("../img/hero-bg.jpg");
+}
+
+.hero-about {
+  background: url("../img/about-hero.jpg");
+  background-position: bottom right;
 }
 
 .hero::after {
@@ -109,6 +117,10 @@
   animation: scrollDown var(--time-slowest) infinite forwards;
 }
 
+.scroll-down-btn:has(:active, :focus) {
+  outline: 1px dotted;
+}
+
 @keyframes scrollDown {
   0% {
     transform: translateY(-10px);
@@ -155,24 +167,23 @@
 }
 
 .whyUs {
-  padding: 5rem 8.5rem;
+  /* padding: 5rem 8.5rem; */
   background: var(--yellow-500);
   position: relative;
 }
 
 .weOffer {
-  padding: 5rem 8.5rem;
+  /* padding: 5rem 8.5rem; */
   /* background: var(--yellow-500); */
   position: relative;
 }
 
 /* ## user rating ## */
-
 .chat-wrapper {
   border-radius: 1rem;
   box-shadow: 0 0 0.5rem var(--grey-300);
   padding: 3.5rem 2.5rem;
-  text-align-last: left;
+  text-align: left;
 }
 
 .user-icon {
@@ -224,6 +235,10 @@
   font-size: 1.5rem;
 }
 
+.footer-link:has(:active, :focus) {
+  outline: 1px dotted;
+}
+
 .footer-link:hover {
   opacity: 0.85;
 }
@@ -260,4 +275,40 @@
 .footer-grid-link:hover {
   text-decoration: underline;
   opacity: 0.85;
+}
+
+.footer-grid-link:has(:active, :focus) {
+  outline: 1px dotted var(--white);
+}
+
+/* ## additional styling ## */
+.flex-group {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.phil-item {
+  background: var(--yellow-500);
+  padding: 2rem 2.5rem;
+  width: 325px;
+  text-align: left;
+  color: var(--grey-800);
+  transition: var(--time-slow);
+}
+
+.phil-title {
+  font-size: 1.5rem;
+  font-weight: var(--fw-bolder);
+  margin-bottom: 1rem;
+}
+
+.phil-body {
+  font-size: 1.125rem;
+}
+
+.phil-item:hover {
+  cursor: pointer;
+  background: var(--yellow-600);
+  width: 375px;
 }

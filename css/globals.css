@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: var(--ff-body);
+}
+
 h1,
 h2,
 h3,
@@ -37,9 +41,11 @@ p {
   align-items: center;
   justify-content: center;
   border-radius: 3rem;
-  font-family: var(--ff-title);
-  font-size: 1.125rem;
-  font-weight: var(--fw-bold);
+  text-transform: capitalize; /* transform */
+  font-family: var(--ff-body); /* font family */
+  font-weight: var(--fw-bold); /* font weight */
+  font-size: 1.125rem; /* font size */
+  user-select: none;
   transition: var(--time-faster);
 }
 
@@ -72,12 +78,42 @@ p {
 /* ## links ## */
 .link {
   color: var(--mozilla-blue-500);
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
   /* font-weight: var(--fw-medium); */
   text-decoration: none;
+}
+
+.link-icon {
+  display: inline-block;
+  /* border: 1px solid; */
+  font-size: 1rem;
 }
 
 .link:hover {
   text-decoration: underline;
   color: var(--mozilla-blue-600);
+}
+
+.link:focus,
+.link:active {
+  outline: 1px dotted var(--black);
+}
+
+/* ## details and summary ## */
+details {
+  padding: 1rem 1.5rem;
+  background: var(--grey-200);
+  user-select: none;
+  text-align: left;
+  font-family: inherit;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+
+summary {
+  font-weight: var(--fw-bold);
+  margin: 0.5rem auto;
 }
