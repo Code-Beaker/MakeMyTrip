@@ -312,3 +312,52 @@
   background: var(--yellow-600);
   width: 375px;
 }
+
+/* ## gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  grid-template-rows: 300px 250px 350px;
+  grid-template-areas:
+    "header header header"
+    "nav content sidebar"
+    "footer footer footer";
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.gallery-item {
+  max-width: auto;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  /* outline: 2px dotted; */
+}
+
+.gallery-img,
+.gallery-item img {
+  max-width: 65rem;
+}
+
+.gallery-header {
+  grid-area: header;
+}
+
+.gallery-nav {
+  grid-area: nav;
+}
+
+.gallery-content {
+  grid-area: content;
+}
+
+.gallery-sidebar {
+  grid-area: sidebar;
+}
+
+.gallery-footer {
+  grid-area: footer;
+}

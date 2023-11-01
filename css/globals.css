@@ -41,6 +41,8 @@ p {
   align-items: center;
   justify-content: center;
   border-radius: 3rem;
+  border: none;
+  cursor: pointer;
   text-transform: capitalize; /* transform */
   font-family: var(--ff-body); /* font family */
   font-weight: var(--fw-bold); /* font weight */
