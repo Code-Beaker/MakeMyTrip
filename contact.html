@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MakeMyTrip | Best tourism company</title>
+    <title>MakeMyTrip | Gallery and showcase</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -17,16 +17,16 @@
         <a href="index.html" class="nav-logo">MakeMyTrip</a>
         <ul class="nav-links">
           <li class="nav-item">
-            <a href="index.html" class="nav-link active">Home</a>
+            <a href="index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
             <a href="about.html" class="nav-link">About Us</a>
           </li>
           <li class="nav-item">
-            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="index.html" class="nav-link">Gallery</a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact Us</a>
+            <a href="index.html" class="nav-link active">Contact Us</a>
           </li>
         </ul>
         <ul class="nav-links">
@@ -47,82 +47,52 @@
       </nav>
     </header>
     <!-- hero -->
-    <div class="hero hero-home">
+    <div class="hero hero-contact">
       <div class="hero-container">
-        <h1 class="hero-title">Make your holidays better.</h1>
+        <h1 class="hero-title">Let's have a talk.</h1>
         <p class="hero-text">
-          With MakeMyTrip, you can travel around the world with the full luxury
-          experience.
+          Contact MakeMyTrip management team, share your queries and requests
+          and get instant feedbacks!
         </p>
-        <div class="hero-btn-wrapper">
-          <a href="#" class="btn btn-primary"
-            >See Plans
-            <span class="btn-icon"> <i class="bi bi-chevron-right"></i></span
-          ></a>
-          <a href="#" class="btn btn-secondary"
-            >Make a call<span class="btn-icon">
-              <i class="bi bi-telephone"></i></span
-          ></a>
-        </div>
       </div>
-      <a class="scroll-down-btn" href="#aboutSection"
+      <a class="scroll-down-btn" href="#gallerySection"
         ><i class="bi bi-chevron-double-down"></i
       ></a>
     </div>
     <!-- section-1 ## About Us -->
-    <section class="section about-section" id="aboutSection">
-      <h1 class="section-title">Who we are</h1>
+    <section class="section about-section" id="gallerySection">
+      <h1 class="section-title">Fill the form below</h1>
       <p class="section-text">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae
-        recusandae earum fugiat praesentium, impedit nesciunt animi modi dolores
-        ducimus explicabo quibusdam nostrum odit doloremque deleniti quaerat
-        vitae est incidunt possimus libero natus optio autem?
-        <a href="#" class="link"
-          >Visit Wikipedia page
-          <span class="link-icon"> <i class="bi bi-chevron-right"></i> </span
-        ></a>
+        Enter information below, get support from our team, or reach us through
+        our official social media accounts.
       </p>
-      <div class="btn-container">
-        <a href="#" class="btn btn-primary"
-          >Learn more<span class="btn-icon">
-            <i class="bi bi-chevron-right"></i></span
-        ></a>
-      </div>
-    </section>
-    <!-- section-2 ## section grid -->
-    <div class="section-grid-wrapper-2">
-      <section class="section whyUs">
-        <h1 class="section-title">why us?</h1>
-        <p class="section-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui atque
-          veritatis provident magni molestiae earum autem facere. Voluptate,
-          perspiciatis nihil.
-        </p>
-      </section>
-      <section class="section weOffer">
-        <h1 class="section-title">What we offer</h1>
-        <p class="section-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui atque
-          veritatis provident magni molestiae earum autem facere. Voluptate,
-          <a href="gallery.html" class="link">visit our gallery</a>.
-        </p>
-      </section>
-    </div>
-    <!-- section - 3 ## user ratings -->
-    <section class="section userRatings">
-      <h1 class="section-title">What our tourists say</h1>
-      <div class="chat-wrapper">
-        <img src="img/user-icon.png" alt="user" class="user-icon" />
-        <h3 class="chat-msg-title">
-          Excellent experience. Probably the best out there!!
-        </h3>
-        <img src="img/5-star-rating.png" alt="" class="user-rating-img" />
-        <p class="chat-msg-body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquam
-          unde repellendus molestias doloribus amet sint sapiente a! Maiores,
-          numquam cum! Nemo, dicta? Mollitia deserunt eaque magni quos enim
-          quibusdam.
-        </p>
+      <div class="contact-grid">
+        <form action="index.html">
+          <input
+            type="text"
+            class="input-item"
+            placeholder="Enter first name"
+            required
+          /><input
+            type="text"
+            class="input-item"
+            placeholder="Enter last name"
+            required
+          />
+          <input type="email" placeholder="Enter email address" required />
+          <textarea
+            placeholder="Enter your comments, suggestions or queries."
+          ></textarea>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+        <div class="div"></div>
+        <article>
+          <h2>Adress</h2>
+          <p>
+            Near Marina Traders, Kochi Kerala, <br />
+            Phone: 9812423212
+          </p>
+        </article>
       </div>
     </section>
     <!-- footer -->
