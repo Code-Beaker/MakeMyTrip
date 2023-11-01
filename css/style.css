@@ -70,6 +70,13 @@
   background-position: bottom right;
 }
 
+.hero-contact {
+  background: url("../img/hero-contact.jpg");
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .hero::after {
   content: "";
   position: absolute;
@@ -360,4 +367,32 @@
 
 .gallery-footer {
   grid-area: footer;
+}
+
+/* ## contact ## */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.div {
+  height: 100%;
+  width: 2px;
+  background: var(--grey-800);
+}
+
+.contact-grid article {
+  text-align: left;
+}
+
+.contact-grid article h2 {
+  font-size: 2rem;
+}
+
+.contact-grid article p {
+  font-size: 1.25rem;
+  color: var(--grey-700);
+  font-weight: var(--fw-bold);
 }
