@@ -113,6 +113,10 @@ details {
   cursor: pointer;
 }
 
+details[open] summary {
+  outline: 1px dotted;
+}
+
 summary {
   font-weight: var(--fw-bold);
   margin: 0.5rem auto;
