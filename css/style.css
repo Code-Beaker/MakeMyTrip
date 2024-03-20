@@ -62,16 +62,16 @@
 }
 
 .hero-home {
-  background-image: url("../img/hero-bg.jpg");
+  background-image: url("../img/compressed/hero-bg.webp");
 }
 
 .hero-about {
-  background: url("../img/about-hero.jpg");
+  background: url("../img/compressed/about-hero.webp");
   background-position: bottom right;
 }
 
 .hero-contact {
-  background: url("../img/hero-contact.jpg");
+  background: url("../img/compressed/hero-contact.webp");
   background-position: left center;
   background-size: contain;
   background-repeat: no-repeat;
