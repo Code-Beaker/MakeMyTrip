@@ -401,10 +401,53 @@
 @media (width < 50rem) {
   .nav {
     justify-content: center;
+    flex-direction: column;
+    height: max-content;
+  }
+
+  .nav__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav__toggle-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+  }
+
+  .nav__toggle-btn-focus {
+    rotate: 90deg;
+    outline: 3px solid var(--grey-300);
+  }
+
+  #navToggleButtonIcon {
+    font-size: 1.5rem;
   }
 
   .nav-links {
+    /* display: none; */
     display: none;
+    flex-direction: column;
+    margin-top: 3rem;
+    padding: 0 1rem;
+    overflow: hidden;
+    /* height: 0; */
+  }
+
+  .nav-links-show {
+    display: flex;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    text-align: center;
   }
 
   .hero-title {
