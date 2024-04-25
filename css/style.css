@@ -398,11 +398,15 @@
   font-weight: var(--fw-bold);
 }
 
-@media (width < 50rem) {
+.nav__toggle-btn {
+  display: none;
+}
+
+@media (width < 75rem) {
   .nav {
     justify-content: center;
     flex-direction: column;
-    height: max-content;
+    height: fit-content;
   }
 
   .nav__top {
@@ -410,6 +414,10 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+  }
+
+  .nav__buttons {
+    display: none;
   }
 
   .nav__toggle-btn {
@@ -435,10 +443,10 @@
     /* display: none; */
     display: none;
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding: 0 1rem;
     overflow: hidden;
-    /* height: 0; */
+    height: 100%;
   }
 
   .nav-links-show {
@@ -449,7 +457,9 @@
     gap: 1rem;
     text-align: center;
   }
+}
 
+@media (width < 50rem) {
   .hero-title {
     font-size: 2rem;
   }
