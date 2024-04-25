@@ -406,6 +406,11 @@
   font-weight: var(--fw-bold);
 }
 
+/* HIDE NAV TOGGLE ON DESKTOP */
+.nav__toggle-btn {
+  display: none;
+}
+
 @media (width < 50rem) {
   .nav {
     justify-content: center;
