@@ -42,12 +42,17 @@
   padding: 0.75rem 1.5rem;
   border-radius: 3rem;
   transition: var(--time-faster);
+  outline-offset: 3px;
 }
 
 .nav-link:hover,
 .active {
   background: var(--white);
   color: var(--black);
+}
+
+.nav-link:focus {
+  outline: 3px dotted var(--white);
 }
 
 /* ## Hero ## */
@@ -121,11 +126,12 @@
   font-size: 2rem;
   color: var(--white);
   z-index: 9;
+  outline-offset: 3px;
   animation: scrollDown var(--time-slowest) infinite forwards;
 }
 
 .scroll-down-btn:has(:active, :focus) {
-  outline: 1px dotted;
+  outline: 3px dotted var(--white);
 }
 
 @keyframes scrollDown {
@@ -240,10 +246,11 @@
   text-decoration: none;
   color: var(--white);
   font-size: 1.5rem;
+  outline-offset: 3px;
 }
 
-.footer-link:has(:active, :focus) {
-  outline: 1px dotted;
+.footer-link:focus {
+  outline: 3px dotted var(--white);
 }
 
 .footer-link:hover {
@@ -277,6 +284,7 @@
   /* font-size: 1.125rem; */
   margin: 0.5rem 0;
   display: inline-block;
+  outline-offset: 3px;
 }
 
 .footer-grid-link:hover {
@@ -284,8 +292,8 @@
   opacity: 0.85;
 }
 
-.footer-grid-link:has(:active, :focus) {
-  outline: 1px dotted var(--white);
+.footer-grid-link:focus {
+  outline: 3px dotted var(--white);
 }
 
 /* ## additional styling ## */
