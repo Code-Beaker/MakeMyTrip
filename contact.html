@@ -14,10 +14,15 @@
     <!-- header -->
     <header class="header">
       <nav class="nav">
-        <a href="index.html" class="nav-logo">MakeMyTrip</a>
-        <ul class="nav-links">
+        <div class="nav__top">
+          <a href="index.html" class="nav-logo">MakeMyTrip</a>
+          <button id="navToggleButton" class="nav__toggle-btn">
+            <i id="navToggleButtonIcon" class="bi bi-list"></i>
+          </button>
+        </div>
+        <ul id="navLinksWrapper" class="nav-links">
           <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link active">Home</a>
           </li>
           <li class="nav-item">
             <a href="about.html" class="nav-link">About Us</a>
@@ -26,7 +31,7 @@
             <a href="gallery.html" class="nav-link">Gallery</a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link active">Contact Us</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
           </li>
         </ul>
         <ul class="nav-links">

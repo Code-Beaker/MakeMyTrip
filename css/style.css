@@ -469,7 +469,7 @@
   .btn-primary,
   .btn-secondary {
     /* display: block; */
-    width: 100%;
+    width: 15rem;
     font-size: 1.125rem;
   }
 
