@@ -1,11 +1,6 @@
-/* Manrope */
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&display=swap");
-/* Lato */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
-
 :root {
-  --ff-title: "Manrope";
-  --ff-body: "Lato";
+  --ff-title: system-ui, Ubuntu, sans-serif;
+  --ff-body: system-ui, Ubuntu, sans-serif;
 
   --fw-light: 300;
   --fw-regular: 400;
