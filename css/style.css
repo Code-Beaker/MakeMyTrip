@@ -89,6 +89,13 @@
   background-size: cover;
 }
 
+@media (width < 75rem) {
+  .hero-gallery {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 .hero-contact {
   background: url("../img/compressed/hero-contact.webp");
   background-position: left top;
