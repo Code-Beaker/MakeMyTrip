@@ -43,6 +43,7 @@
   border-radius: 3rem;
   transition: var(--time-faster);
   outline-offset: 3px;
+  /* outline: 3px dotted transparent; */
 }
 
 .nav-link:hover,
@@ -71,14 +72,27 @@
 }
 
 .hero-about {
-  background: url("../img/compressed/about-hero.webp");
-  background-position: bottom right;
+  background: url("../img/compressed/hero__about.webp");
+  background-position: bottom left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (width < 75rem) {
+  .hero-about {
+    background-position: top right;
+  }
+}
+
+.hero-gallery {
+  background: url("../img/compressed/hero__gallery.webp");
+  background-size: cover;
 }
 
 .hero-contact {
   background: url("../img/compressed/hero-contact.webp");
-  background-position: left center;
-  background-size: contain;
+  background-position: left top;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -273,7 +287,7 @@
 
 .footer-item-title {
   text-transform: capitalize;
-  font-size: 1.35rem;
+  font-size: 1.125rem;
   margin: 1rem 0;
 }
 
@@ -293,7 +307,8 @@
 }
 
 .footer-grid-link:focus {
-  outline: 3px dotted var(--white);
+  outline: 3px dotted;
+  outline-color: invert;
 }
 
 /* ## additional styling ## */
@@ -301,12 +316,14 @@
   display: flex;
   justify-content: center;
   align-items: stretch;
+  gap: 1rem;
 }
 
 .phil-item {
   background: var(--yellow-500);
   padding: 2rem 2.5rem;
-  width: 325px;
+  max-width: 325px;
+  border-radius: 0.5rem;
   text-align: left;
   color: var(--grey-800);
   transition: var(--time-slow);
@@ -325,7 +342,7 @@
 .phil-item:hover {
   cursor: pointer;
   background: var(--yellow-600);
-  width: 375px;
+  /* width: 375px; */
 }
 
 /* ## gallery */
@@ -434,12 +451,16 @@
   font-weight: var(--fw-bold);
 }
 
+form {
+  text-align: left;
+}
+
 /* HIDE NAV TOGGLE ON DESKTOP */
 .nav__toggle-btn {
   display: none;
 }
 
-@media (width < 50rem) {
+@media (width < 75rem) {
   .nav {
     justify-content: center;
     flex-direction: column;
@@ -549,7 +570,7 @@
     gap: 1rem;
   }
 
-  .phil-item {
+  /* .phil-item {
     max-height: 3rem;
     width: 100%;
     padding: 1rem;
@@ -557,10 +578,17 @@
     border-radius: 0.5rem;
   }
 
+  */
+
+  .phil-item {
+    max-width: 100%;
+  }
+
+  /*
   .phil-item:hover {
     width: 100%;
     max-height: 20rem;
-  }
+  } */
 
   .gallery-grid {
     grid-area: none;

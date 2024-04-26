@@ -50,3 +50,5 @@ Here's what I used to build this project.
 - [Virgin Forest Image](https://unsplash.com/@danroizer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 - [Hotel](https://unsplash.com/@bilderboken?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) -[Crowd](https://unsplash.com/@omarlopez1?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 - [Bus](https://unsplash.com/@jonathanborba?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+- [Clock](https://unsplash.com/@srosinger3997?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+- [Camera](https://unsplash.com/@sharegrid)

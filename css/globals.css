@@ -52,6 +52,13 @@ p {
   transition: var(--time-faster);
 }
 
+@media (width < 75rem) {
+  .btn {
+    font-weight: var(--fw-medium);
+    padding: 1rem;
+  }
+}
+
 .btn-icon {
   display: inline-block;
 }
@@ -80,19 +87,21 @@ p {
 
 .btn-primary:focus,
 .btn-secondary:focus {
-  outline: 3px dotted var(--yellow-500);
+  outline: 3px dotted;
+  outline-color: invert;
 }
 
 /* ## links ## */
 .link {
-  color: var(--mozilla-blue-500);
+  color: var(--mozilla-blue-600);
   display: inline-flex;
   justify-content: center;
+  text-decoration: underline;
   align-items: center;
   outline-offset: 2px;
   gap: 0.25rem;
   /* font-weight: var(--fw-medium); */
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 .link-icon {
@@ -102,12 +111,12 @@ p {
 }
 
 .link:hover {
-  text-decoration: underline;
-  color: var(--mozilla-blue-600);
+  color: var(--mozilla-blue-500);
 }
 
 .link:focus {
-  outline: 3px dotted var(--black);
+  outline: 3px dotted;
+  outline-color: invert;
 }
 
 /* ## details and summary ## */
@@ -119,10 +128,11 @@ details {
   font-family: inherit;
   margin: 1rem auto;
   cursor: pointer;
+  outline-offset: 3px;
 }
 
 details[open] summary {
-  outline: 1px dotted;
+  outline: 3px dotted;
 }
 
 summary {
@@ -141,5 +151,5 @@ textarea {
 }
 
 textarea {
-  height: 15rem;
+  height: 10rem;
 }

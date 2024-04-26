@@ -91,7 +91,11 @@
           and get instant feedbacks!
         </p>
       </div>
-      <a class="scroll-down-btn" href="#gallerySection"
+      <a
+        aria-label="scrollDown"
+        aria-hidden="false"
+        class="scroll-down-btn"
+        href="#aboutSection"
         ><i class="bi bi-chevron-double-down"></i
       ></a>
     </div>
@@ -104,20 +108,38 @@
       </p>
       <div class="contact-grid">
         <form action="index.html">
+          <label for="fullName">Enter your full name</label>
           <input
             type="text"
-            class="input-item"
-            placeholder="Enter first name"
+            name="fullNameInput"
+            placeholder="John Doe"
             required
-          /><input
-            type="text"
-            class="input-item"
-            placeholder="Enter last name"
+            aria-required="true"
+            id="fullName"
+          />
+          <label for="emailInput">Enter your E-mail</label>
+          <input
+            id="emailInput"
+            required
+            type="email"
+            aria-required="true"
+            placeholder="example@email.com"
             required
           />
-          <input type="email" placeholder="Enter email address" required />
+          <label for="phoneInput">Enter your Phone(optional)</label>
+          <input
+            id="phoneInput"
+            placeholder="123-456-7890"
+            required
+            type="tel"
+            aria-required="true"
+          />
+
+          <label for="commentsInput">Enter your comments(optional)</label>
           <textarea
-            placeholder="Enter your comments, suggestions or queries."
+            id="commentsInput"
+            aria-label="comments"
+            aria-hidden="false"
           ></textarea>
           <button class="btn btn-primary" type="submit">Submit</button>
         </form>
