@@ -10,7 +10,11 @@ This website is not official or part of any existing or upcoming projects. But, 
   - [Tools and Languages 🔨](#tools-and-languages-)
     - [Software and Tools](#software-and-tools)
     - [Languages](#languages)
+  - [Speed Insights](#speed-insights)
+    - [Mobile Phones](#mobile-phones)
+    - [Desktop](#desktop)
   - [Image Credits 👱](#image-credits-)
+  - [Personal links 🔗](#personal-links-)
 
 ## URLS 🔗
 
@@ -33,6 +37,8 @@ Here's what I used to build this project.
 
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 
+[Squoosh](https://squoosh.app/) - Image compression and optimization
+
 ### Languages
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -43,6 +49,18 @@ Here's what I used to build this project.
 
 ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
 
+## Speed Insights
+
+Here's how the website performs on [Google SpeedInsights](https://pagespeed.web.dev/)
+
+### Mobile Phones
+
+![Performance on Mobile](image-1.png)
+
+### Desktop
+
+![Performance on Desktop](image.png)
+
 ## Image Credits 👱
 
 - [Mountains](https://unsplash.com/@jeremybishop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
@@ -52,3 +70,10 @@ Here's what I used to build this project.
 - [Bus](https://unsplash.com/@jonathanborba?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 - [Clock](https://unsplash.com/@srosinger3997?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 - [Camera](https://unsplash.com/@sharegrid)
+
+## Personal links 🔗
+
+- [Personal Website](https://tharun-web.netlify.app)
+- [Twitter](https://twitter.com/@iamtharunraj)
+- [YouTube](https://youtube.com/@iamtharunraj)
+- [Frontend Mentor](https://www.frontendmentor.io/profile/Code-Beaker)
