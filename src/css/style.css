@@ -439,8 +439,12 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  gap: 2rem;
+  gap: 1rem;
   padding: 2rem 0;
+}
+
+.contact-section {
+  padding: 5rem;
 }
 
 .div {
@@ -451,14 +455,16 @@
 
 .contact-grid article {
   text-align: left;
+  padding: 1rem;
 }
 
-.contact-grid article h2 {
+.contact-grid article h3 {
   font-size: 2rem;
 }
 
-.contact-grid article p {
+.contact-grid article address {
   font-size: 1.25rem;
+  font-style: normal;
   color: var(--grey-700);
   font-weight: var(--fw-bold);
 }
@@ -644,9 +650,56 @@ form {
   .div {
     height: 2px;
     width: 100%;
+    max-width: 100%;
   }
   /* 
   .gallery-nav {
     display: none;
   } */
+}
+
+/* THANKS */
+.thanks {
+  background-color: var(--white);
+  margin: auto;
+  width: 22rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: none;
+  margin-top: 2rem;
+}
+
+@media screen and (width < 50rem) {
+  .thanks {
+    max-width: 20rem;
+  }
+
+  .contact-section {
+    padding: 0.5rem;
+  }
+}
+
+.thanks-show {
+  display: block;
+}
+
+.thanks__heading {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.thanks__img-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.thanks__img--img {
+  width: 5rem;
+}
+
+.thanks__text {
+  font-size: 1.125rem;
 }
