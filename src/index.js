@@ -28,7 +28,10 @@ NavToggleBtn.addEventListener("click", () => {
   }
 });
 
+const thanksEl = document.querySelector(".thanks");
+
 // FORM
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  thanksEl.classList.add("thanks-show");
 });
