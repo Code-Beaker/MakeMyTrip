@@ -472,6 +472,15 @@ form {
   display: none;
 }
 
+.nav__toggle-btn--icon {
+  display: block;
+  width: 2rem;
+}
+
+.rotate {
+  rotate: 90deg;
+}
+
 @media (width < 75rem) {
   .nav {
     justify-content: center;
