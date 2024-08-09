@@ -1,0 +1,16 @@
+{
+  "name": "makemytrip",
+  "version": "1.0.0",
+  "description": "This website is not official or part of any existing or upcoming projects. But, is a project I created while learning how to make websites. Now it's being updated.",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "Code-Beaker",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}

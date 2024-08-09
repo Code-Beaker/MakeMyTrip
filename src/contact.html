@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MakeMyTrip | About us behind the company</title>
+    <title>MakeMyTrip | Gallery and showcase</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -22,7 +22,11 @@
             id="navToggleButton"
             class="nav__toggle-btn"
           >
-            <i id="navToggleButtonIcon" class="bi bi-list"></i>
+            <img
+              class="nav__toggle-btn--icon"
+              src="img/compressed/menu_26dp_FFF_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
           </button>
         </div>
         <ul id="navLinksWrapper" class="nav-links">
@@ -30,6 +34,7 @@
             <a
               aria-hidden="false"
               aria-label="Home"
+              aria-current="page"
               href="index.html"
               class="nav-link"
               >Home</a
@@ -38,10 +43,9 @@
           <li class="nav-item">
             <a
               aria-hidden="false"
-              aria-current="page"
               aria-label="About"
               href="about.html"
-              class="nav-link active"
+              class="nav-link"
               >About Us</a
             >
           </li>
@@ -59,7 +63,8 @@
               aria-hidden="false"
               aria-label="Contact"
               href="contact.html"
-              class="nav-link"
+              class="nav-link active"
+              aria-current="page"
               >Contact Us</a
             >
           </li>
@@ -82,23 +87,13 @@
       </nav>
     </header>
     <!-- hero -->
-    <div class="hero hero-about">
+    <div class="hero hero-contact">
       <div class="hero-container">
-        <h1 class="hero-title">About us at MakeMyTrip</h1>
+        <h1 class="hero-title">Let's have a talk.</h1>
         <p class="hero-text">
-          Working to make your holidays better. We are commited to delivering
-          the best experience to our customers.
+          Contact MakeMyTrip management team, share your queries and requests
+          and get instant feedbacks!
         </p>
-        <div class="hero-btn-wrapper">
-          <a href="gallery.html" class="btn btn-primary"
-            >Visit our gallery
-            <span class="btn-icon"><i class="bi bi-chevron-right"></i></span
-          ></a>
-          <a href="#" class="btn btn-secondary"
-            >Contact now<span class="btn-icon">
-              <i class="bi bi-telephone"></i></span
-          ></a>
-        </div>
       </div>
       <a
         aria-label="scrollDown"
@@ -109,78 +104,60 @@
       ></a>
     </div>
     <!-- section-1 ## About Us -->
-    <section class="section about-section" id="aboutSection">
-      <h1 class="section-title">20+ years on the field</h1>
+    <section class="section about-section" id="gallerySection">
+      <h1 class="section-title">Fill the form below</h1>
       <p class="section-text">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae
-        recusandae earum fugiat praesentium, impedit nesciunt animi modi dolores
-        ducimus explicabo quibusdam nostrum odit doloremque deleniti quaerat
-        vitae est incidunt possimus libero natus optio autem?
-        <a href="#" class="link"
-          >Visit our community
-          <span class="link-icon"><i class="bi bi-chevron-right"></i></span
-        ></a>
+        Enter information below, get support from our team, or reach us through
+        our official social media accounts.
       </p>
-      <div class="btn-container">
-        <a href="#" class="btn btn-primary"
-          >Explore the gallery<span class="btn-icon">
-            <i class="bi bi-chevron-right"></i></span
-        ></a>
+      <div class="contact-grid">
+        <form action="index.html">
+          <label for="fullName">Enter your full name</label>
+          <input
+            type="text"
+            name="fullNameInput"
+            placeholder="John Doe"
+            required
+            aria-required="true"
+            id="fullName"
+          />
+          <label for="emailInput">Enter your E-mail</label>
+          <input
+            id="emailInput"
+            required
+            type="email"
+            aria-required="true"
+            placeholder="example@email.com"
+            required
+          />
+          <label for="phoneInput">Enter your Phone(optional)</label>
+          <input
+            id="phoneInput"
+            placeholder="123-456-7890"
+            required
+            type="tel"
+            aria-required="true"
+          />
+
+          <label for="commentsInput">Enter your comments(optional)</label>
+          <textarea
+            id="commentsInput"
+            aria-label="comments"
+            aria-hidden="false"
+          ></textarea>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+        <div class="div"></div>
+        <article>
+          <h2>Address</h2>
+          <p>
+            Near Marina Traders, Kochi Kerala, <br />
+            Phone: 9812423212
+          </p>
+        </article>
       </div>
     </section>
-    <section class="section">
-      <h1 class="section-title">MakeMyTrip trust</h1>
-      <div class="flex-group phil-flex">
-        <div class="phil-item">
-          <h2 class="phil-title">Welfare</h2>
-          <p class="phil-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
-            voluptatibus velit dolore ea, nemo labore quam temporibus harum amet
-            ducimus cupiditate nostrum consequuntur quasi optio alias!
-          </p>
-        </div>
-        <div class="phil-item">
-          <h2 class="phil-title">Careers</h2>
-          <p class="phil-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
-            voluptatibus velit dolore ea, nemo labore quam temporibus harum amet
-            ducimus cupiditate nostrum consequuntur quasi optio alias!
-          </p>
-        </div>
-        <div class="phil-item">
-          <h2 class="phil-title">Funds</h2>
-          <p class="phil-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
-            voluptatibus velit dolore ea, nemo labore quam temporibus harum amet
-            ducimus cupiditate nostrum consequuntur quasi optio alias!
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- accordion -->
-    <section class="section">
-      <h1 class="section-title">Frequently Asked Questions</h1>
-      <div class="det-wrapper">
-        <details>
-          <summary>Can I trust MakeMyTrip?</summary>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-          perspiciatis praesentium! Autem quasi deserunt maxime et assumenda
-          sint.
-        </details>
-        <details>
-          <summary>Where is MakeMyTrip based?</summary>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-          perspiciatis praesentium! Autem quasi deserunt maxime et assumenda
-          sint.
-        </details>
-        <details>
-          <summary>Do you offer refunds?</summary>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-          perspiciatis praesentium! Autem quasi deserunt maxime et assumenda
-          sint.
-        </details>
-      </div>
-    </section>
+    <!-- footer -->
     <!-- footer -->
     <footer class="footer">
       <nav class="footer-nav">
@@ -343,6 +320,6 @@
         &copy; <span id="currentYear"></span>, MakeMyTrip. All rights reserved.
       </p>
     </footer>
-    <script src="js/index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

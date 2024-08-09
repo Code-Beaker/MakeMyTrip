@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MakeMyTrip | Best tourism company</title>
+    <title>MakeMyTrip | Gallery and showcase</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -22,7 +22,11 @@
             id="navToggleButton"
             class="nav__toggle-btn"
           >
-            <i id="navToggleButtonIcon" class="bi bi-list"></i>
+            <img
+              class="nav__toggle-btn--icon"
+              src="img/compressed/menu_26dp_FFF_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
           </button>
         </div>
         <ul id="navLinksWrapper" class="nav-links">
@@ -31,7 +35,7 @@
               aria-hidden="false"
               aria-label="Home"
               href="index.html"
-              class="nav-link active"
+              class="nav-link"
               >Home</a
             >
           </li>
@@ -49,7 +53,8 @@
               aria-hidden="false"
               aria-label="Gallery"
               href="gallery.html"
-              class="nav-link"
+              aria-current="page"
+              class="nav-link active"
               >Gallery</a
             >
           </li>
@@ -65,22 +70,14 @@
         </ul>
         <ul class="nav-links">
           <li class="nav-item">
-            <a
-              aria-label="button"
-              aria-hidden="false"
-              href="#"
-              class="btn btn-primary"
+            <a href="#" class="btn btn-primary"
               >Sign In
               <span class="btn-icon"
                 ><i class="bi bi-person-fill-down"></i></span
             ></a>
           </li>
           <li class="nav-item">
-            <a
-              aria-label="button"
-              aria-hidden="false"
-              href="#"
-              class="btn btn-secondary"
+            <a href="#" class="btn btn-secondary"
               >Sign Up
               <span class="btn-icon"><i class="bi bi-person-fill-add"></i></span
             ></a>
@@ -89,31 +86,13 @@
       </nav>
     </header>
     <!-- hero -->
-    <div class="hero hero-home">
+    <div class="hero hero-gallery">
       <div class="hero-container">
-        <h1 class="hero-title">Make your holidays better.</h1>
+        <h1 class="hero-title">Gallery and Showcase!</h1>
         <p class="hero-text">
-          With MakeMyTrip, you can travel around the world with the full luxury
-          experience.
+          Explore the wonders and beauty captured by the tourists from
+          MakeMyTrip!
         </p>
-        <div class="hero-btn-wrapper">
-          <a
-            aria-hidden="false"
-            aria-label="Plans"
-            href="#"
-            class="btn btn-primary"
-            >See Plans
-            <span class="btn-icon"> <i class="bi bi-chevron-right"></i></span
-          ></a>
-          <a
-            aria-hidden="false"
-            aria-label="Call"
-            href="#"
-            class="btn btn-secondary"
-            >Make a call<span class="btn-icon">
-              <i class="bi bi-telephone"></i></span
-          ></a>
-        </div>
       </div>
       <a
         aria-label="scrollDown"
@@ -124,69 +103,63 @@
       ></a>
     </div>
     <!-- section-1 ## About Us -->
-    <section class="section about-section" id="aboutSection">
-      <h2 class="section-title">Who we are</h2>
+    <section class="section about-section" id="gallerySection">
+      <h1 class="section-title">MakeMyTrip glance</h1>
       <p class="section-text">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae
-        recusandae earum fugiat praesentium, impedit nesciunt animi modi dolores
-        ducimus explicabo quibusdam nostrum odit doloremque deleniti quaerat
-        vitae est incidunt possimus libero natus optio autem?
-        <a href="#" class="link"
-          >Visit Wikipedia page
-          <span class="link-icon"> <i class="bi bi-chevron-right"></i> </span
+        recusandae earum fugiat praesentium.
+        <a href="contact.html" class="link"
+          >Contact us
+          <span class="link-icon"><i class="bi bi-chevron-right"></i></span
         ></a>
       </p>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-header">
+          <img
+            loading="lazy"
+            src="img/compressed/image-1.webp"
+            alt="gallery item"
+            class="gallery-img"
+          />
+        </div>
+        <div class="gallery-item gallery-nav">
+          <img
+            loading="lazy"
+            src="img/compressed/image-2.webp"
+            alt="gallery item"
+            class="gallery-img"
+          />
+        </div>
+        <div class="gallery-item gallery-sidebar">
+          <img
+            loading="lazy"
+            src="img/compressed/image-3.webp"
+            alt="gallery item"
+            class="gallery-img"
+          />
+        </div>
+        <div class="gallery-item gallery-content">
+          <img
+            loading="lazy"
+            src="img/compressed/image-4.webp"
+            alt="gallery item"
+            class="gallery-img"
+          />
+        </div>
+        <div class="gallery-item gallery-footer">
+          <img
+            loading="lazy"
+            src="img/compressed/image-5.webp"
+            alt="gallery item"
+            class="gallery-img"
+          />
+        </div>
+      </div>
       <div class="btn-container">
-        <a
-          aria-label="Learn more"
-          aria-hidden="false"
-          href="#"
-          class="btn btn-primary"
-          >Learn more<span class="btn-icon">
-            <i class="bi bi-chevron-right"></i></span
-        ></a>
+        <button class="btn btn-primary">Load more</button>
       </div>
     </section>
-    <!-- section-2 ## section grid -->
-    <div class="section-grid-wrapper-2">
-      <section class="section whyUs">
-        <h2 class="section-title">why us?</h2>
-        <p class="section-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui atque
-          veritatis provident magni molestiae earum autem facere. Voluptate,
-          perspiciatis nihil.
-        </p>
-      </section>
-      <section class="section weOffer">
-        <h1 class="section-title">What we offer</h1>
-        <p class="section-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui atque
-          veritatis provident magni molestiae earum autem facere. Voluptate,
-          <a href="gallery.html" class="link">visit our gallery</a>.
-        </p>
-      </section>
-    </div>
-    <!-- section - 3 ## user ratings -->
-    <section class="section userRatings">
-      <h2 class="section-title">What our tourists say</h2>
-      <div class="chat-wrapper">
-        <img src="img/compressed/user-icon.webp" alt="user" class="user-icon" />
-        <h3 class="chat-msg-title">
-          Excellent experience. Probably the best out there!!
-        </h3>
-        <img
-          src="img/compressed/5-star-rating.webp"
-          alt=""
-          class="user-rating-img"
-        />
-        <p class="chat-msg-body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquam
-          unde repellendus molestias doloribus amet sint sapiente a! Maiores,
-          numquam cum! Nemo, dicta? Mollitia deserunt eaque magni quos enim
-          quibusdam.
-        </p>
-      </div>
-    </section>
+    <!-- footer -->
     <!-- footer -->
     <footer class="footer">
       <nav class="footer-nav">
@@ -349,6 +322,6 @@
         &copy; <span id="currentYear"></span>, MakeMyTrip. All rights reserved.
       </p>
     </footer>
-    <script src="js/index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
