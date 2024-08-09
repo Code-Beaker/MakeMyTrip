@@ -25,6 +25,11 @@
   font-size: 1.5rem;
   font-family: var(--ff-title);
   font-weight: var(--fw-bolder);
+  padding: 0.5rem;
+}
+
+.nav-logo:focus-visible {
+  outline: 0.125rem dotted white;
 }
 
 .nav-links {
@@ -52,7 +57,7 @@
   color: var(--black);
 }
 
-.nav-link:focus {
+.nav-link:focus-visible {
   outline: 3px dotted var(--white);
 }
 
@@ -151,7 +156,7 @@
   animation: scrollDown var(--time-slowest) infinite forwards;
 }
 
-.scroll-down-btn:has(:active, :focus) {
+.scroll-down-btn:has(:active, :focus-visible) {
   outline: 3px dotted var(--white);
 }
 
@@ -270,7 +275,7 @@
   outline-offset: 3px;
 }
 
-.footer-link:focus {
+.footer-link:focus-visible {
   outline: 3px dotted var(--white);
 }
 
@@ -313,7 +318,7 @@
   opacity: 0.85;
 }
 
-.footer-grid-link:focus {
+.footer-grid-link:focus-visible {
   outline: 3px dotted;
   outline-color: invert;
 }
@@ -491,7 +496,7 @@ form {
     transition: 200ms ease-in-out;
   }
 
-  .nav__toggle-btn-focus {
+  .nav__toggle-btn-focus-visible {
     rotate: 90deg;
     outline: 3px solid var(--grey-300);
   }

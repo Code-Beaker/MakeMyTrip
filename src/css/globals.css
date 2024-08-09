@@ -85,8 +85,8 @@ p {
   padding: 1.5rem;
 }
 
-.btn-primary:focus,
-.btn-secondary:focus {
+.btn-primary:focus-visible,
+.btn-secondary:focus-visible {
   outline: 3px dotted;
   outline-color: invert;
 }
@@ -114,7 +114,7 @@ p {
   color: var(--mozilla-blue-500);
 }
 
-.link:focus {
+.link:focus-visible {
   outline: 3px dotted;
   outline-color: invert;
 }

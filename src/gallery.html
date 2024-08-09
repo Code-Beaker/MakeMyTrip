@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MakeMyTrip | About us behind the company</title>
+    <title>MakeMyTrip | Gallery and showcase</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -38,10 +38,9 @@
           <li class="nav-item">
             <a
               aria-hidden="false"
-              aria-current="page"
               aria-label="About"
               href="about.html"
-              class="nav-link active"
+              class="nav-link"
               >About Us</a
             >
           </li>
@@ -50,7 +49,8 @@
               aria-hidden="false"
               aria-label="Gallery"
               href="gallery.html"
-              class="nav-link"
+              aria-current="page"
+              class="nav-link active"
               >Gallery</a
             >
           </li>
@@ -82,23 +82,13 @@
       </nav>
     </header>
     <!-- hero -->
-    <div class="hero hero-about">
+    <div class="hero hero-gallery">
       <div class="hero-container">
-        <h1 class="hero-title">About us at MakeMyTrip</h1>
+        <h1 class="hero-title">Gallery and Showcase!</h1>
         <p class="hero-text">
-          Working to make your holidays better. We are commited to delivering
-          the best experience to our customers.
+          Explore the wonders and beauty captured by the tourists from
+          MakeMyTrip!
         </p>
-        <div class="hero-btn-wrapper">
-          <a href="gallery.html" class="btn btn-primary"
-            >Visit our gallery
-            <span class="btn-icon"><i class="bi bi-chevron-right"></i></span
-          ></a>
-          <a href="#" class="btn btn-secondary"
-            >Contact now<span class="btn-icon">
-              <i class="bi bi-telephone"></i></span
-          ></a>
-        </div>
       </div>
       <a
         aria-label="scrollDown"
@@ -109,78 +99,63 @@
       ></a>
     </div>
     <!-- section-1 ## About Us -->
-    <section class="section about-section" id="aboutSection">
-      <h1 class="section-title">20+ years on the field</h1>
+    <section class="section about-section" id="gallerySection">
+      <h1 class="section-title">MakeMyTrip glance</h1>
       <p class="section-text">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae
-        recusandae earum fugiat praesentium, impedit nesciunt animi modi dolores
-        ducimus explicabo quibusdam nostrum odit doloremque deleniti quaerat
-        vitae est incidunt possimus libero natus optio autem?
-        <a href="#" class="link"
-          >Visit our community
+        recusandae earum fugiat praesentium.
+        <a href="contact.html" class="link"
+          >Contact us
           <span class="link-icon"><i class="bi bi-chevron-right"></i></span
         ></a>
       </p>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-header">
+          <img
+            loading="lazy"
+            src="img/compressed/image-1.webp"
+            alt="gallery item"
+            class="gallery-img"
+          />
+        </div>
+        <div class="gallery-item gallery-nav">
+          <img
+            loading="lazy"
+            src="img/compressed/image-2.webp"
+            alt="gallery item"
+            class="gallery-img"
+          />
+        </div>
+        <div class="gallery-item gallery-sidebar">
+          <img
+            loading="lazy"
+            src="img/compressed/image-3.webp"
+            alt="gallery item"
+            class="gallery-img"
+          />
+        </div>
+        <div class="gallery-item gallery-content">
+          <img
+            loading="lazy"
+            src="img/compressed/image-4.webp"
+            alt="gallery item"
+            class="gallery-img"
+          />
+        </div>
+        <div class="gallery-item gallery-footer">
+          <img
+            loading="lazy"
+            src="img/compressed/image-5.webp"
+            alt="gallery item"
+            class="gallery-img"
+          />
+        </div>
+      </div>
       <div class="btn-container">
-        <a href="#" class="btn btn-primary"
-          >Explore the gallery<span class="btn-icon">
-            <i class="bi bi-chevron-right"></i></span
-        ></a>
+        <button class="btn btn-primary">Load more</button>
       </div>
     </section>
-    <section class="section">
-      <h1 class="section-title">MakeMyTrip trust</h1>
-      <div class="flex-group phil-flex">
-        <div class="phil-item">
-          <h2 class="phil-title">Welfare</h2>
-          <p class="phil-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
-            voluptatibus velit dolore ea, nemo labore quam temporibus harum amet
-            ducimus cupiditate nostrum consequuntur quasi optio alias!
-          </p>
-        </div>
-        <div class="phil-item">
-          <h2 class="phil-title">Careers</h2>
-          <p class="phil-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
-            voluptatibus velit dolore ea, nemo labore quam temporibus harum amet
-            ducimus cupiditate nostrum consequuntur quasi optio alias!
-          </p>
-        </div>
-        <div class="phil-item">
-          <h2 class="phil-title">Funds</h2>
-          <p class="phil-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
-            voluptatibus velit dolore ea, nemo labore quam temporibus harum amet
-            ducimus cupiditate nostrum consequuntur quasi optio alias!
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- accordion -->
-    <section class="section">
-      <h1 class="section-title">Frequently Asked Questions</h1>
-      <div class="det-wrapper">
-        <details>
-          <summary>Can I trust MakeMyTrip?</summary>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-          perspiciatis praesentium! Autem quasi deserunt maxime et assumenda
-          sint.
-        </details>
-        <details>
-          <summary>Where is MakeMyTrip based?</summary>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-          perspiciatis praesentium! Autem quasi deserunt maxime et assumenda
-          sint.
-        </details>
-        <details>
-          <summary>Do you offer refunds?</summary>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-          perspiciatis praesentium! Autem quasi deserunt maxime et assumenda
-          sint.
-        </details>
-      </div>
-    </section>
+    <!-- footer -->
     <!-- footer -->
     <footer class="footer">
       <nav class="footer-nav">
@@ -343,6 +318,6 @@
         &copy; <span id="currentYear"></span>, MakeMyTrip. All rights reserved.
       </p>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
