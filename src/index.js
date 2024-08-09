@@ -11,6 +11,7 @@ footerDate.textContent = currentYear;
 const NavToggleBtn = document.getElementById("navToggleButton");
 const NavBarLinks = document.getElementById("navLinksWrapper");
 const navigationToggleIcon = document.querySelector(".nav__toggle-btn--icon");
+const form = document.querySelector(".form");
 let hidden = true;
 
 NavToggleBtn.addEventListener("click", () => {
@@ -25,4 +26,9 @@ NavToggleBtn.addEventListener("click", () => {
     navigationToggleIcon.setAttribute("src", menuOpen);
     hidden = true;
   }
+});
+
+// FORM
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 });
